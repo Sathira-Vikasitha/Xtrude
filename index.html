@@ -16,7 +16,7 @@
   <main class="page-shell">
     <header class="site-header" aria-label="Company header">
       <div class="logo-mark" aria-hidden="true">
-        <span>X</span>
+        <img src="assets/xtrude-logo-transparent.png" alt="" />
       </div>
 
       <div class="brand-copy">
@@ -42,7 +42,13 @@
         aria-label="Visit Xtrude on Facebook"
       >
         <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M14 8.5h2.3V5.1c-.4-.1-1.8-.2-3.3-.2-3.3 0-5.5 2-5.5 5.7v3.2H4v3.8h3.5V24h4.2v-6.4h3.3l.6-3.8h-3.9V11c0-1.1.3-2.5 2.3-2.5Z"/>
+           <defs>
+            <mask id="facebook-icon-mask">
+              <rect width="24" height="24" rx="4.4" fill="white"/>
+              <path fill="black" d="M11.3 24v-8.5H7.8v-4.1h3.5V8.7c0-3.7 2.3-5.7 5.6-5.7 1.5 0 2.8.1 3.2.2v3.8h-2.2c-1.8 0-2.2.9-2.2 2.1v2.3h4.2l-.7 4.1h-3.5V24h-4.4Z"/>
+            </mask>
+          </defs>
+          <rect width="24" height="24" rx="4.4" fill="currentColor" mask="url(#facebook-icon-mask)"/>
         </svg>
         <span>Facebook</span>
       </a>
